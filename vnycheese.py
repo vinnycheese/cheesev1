@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/tingirifistik/Enough/main/sms.py").text
+r = get("https://raw.githubusercontent.com/tingirifistik/vinnycheeseas/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -12,7 +12,7 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
-r = get("https://raw.githubusercontent.com/tingirifistik/Enough/main/call.py").text
+r = get("https://raw.githubusercontent.com/tingirifistik/vinnycheeseas/main/call.py").text
 with open("call.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -60,7 +60,7 @@ while 1:
 █─███▀█─▄─██─▄█▀██─▄█▀█▄▄▄▄─██─▄█▀█
 ▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
  
-                                    Producer : @vinnycheese\n @l1ne\n\n
+                                    Producer : @vinnycheese-@l1ne
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), len(servisler_call), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = (input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder\n 2- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))
